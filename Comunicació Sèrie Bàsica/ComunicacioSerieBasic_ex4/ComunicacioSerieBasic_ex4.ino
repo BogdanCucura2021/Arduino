@@ -21,7 +21,7 @@
 
 void setup() {                 //configura el final de salida 
 Serial.begin(9600);
-Serial.print("Escull el numero de l'operacio que vols realitzar?");
+Serial.println("Escull el numero de l'operacio que vols realitzar?");
 delay(500);
 Serial.println(" 1.Comprovar numero de tarjeta de credit");
 delay(500);
