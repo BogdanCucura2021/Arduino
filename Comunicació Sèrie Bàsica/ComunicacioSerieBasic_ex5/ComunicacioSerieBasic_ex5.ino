@@ -28,14 +28,15 @@ Serial.begin(9600);
 //****************************LOOP*****************************************
 void loop() {                 //configura el bucle 
 Serial.print(y1);
-Serial.print("/t");
+Serial.print("\t");
 Serial.print(y2);
-Serial.print("/t");
+Serial.print("\t");
 Serial.print(y3);
+Serial.print("\t");
 y1 = y1 + 5;
 y2 = y2 + 2;
 y3 = y3 + 1;
-delay(100);
+delay(1500);
 
   
 }
