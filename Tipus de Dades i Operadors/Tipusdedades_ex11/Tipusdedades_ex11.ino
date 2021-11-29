@@ -20,6 +20,7 @@ long drive_mb;
 long drive_kb;
 long real_drive_mb;
 long real_drive_kb;
+long missingkb;
 
 //****************************SETUP****************************************
 
@@ -46,6 +47,19 @@ real_drive_mb = drive_gb;
 real_drive_mb = real_drive_mb * 1000;
 
 Serial.print(real_drive_mb);
+Serial.print(" Megabytes, ");
+
+real_drive_kb = real_drive_mb * 1000;
+
+Serial.print(real_drive_kb);
+Serial.println(" Kilobytes!");
+Serial.print("You are missing ");
+
+missingkb = drive_kb - real_drive_kb;
+
+Serial.print(missingkb);
+Serial.print(" Kilobytes!");
+
 
 } 
 
