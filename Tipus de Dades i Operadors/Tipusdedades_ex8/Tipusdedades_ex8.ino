@@ -23,7 +23,7 @@ long drive_mb;
 void setup() {                 //configura el final de salida 
 Serial.begin(9600);
 
-Serial.print("Your HD is");
+Serial.print("Your HD is ");
 Serial.print(drive_gb);
 Serial.println("GB Large");
 
