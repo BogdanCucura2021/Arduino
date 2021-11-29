@@ -32,37 +32,37 @@ void setup() {                 //configura el final de salida
   Serial.print("  0  0  0  | ");
   Serial.println(Output);
   A=0; B=0; C=1;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  0  0  1  | ");
   Serial.println(Output);
 
-    A=0; B=1; C=0;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=0; B=1; C=0;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  0  1  0  | ");
   Serial.println(Output);
 
-     A=0; B=1; C=1;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=0; B=1; C=1;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  0  1  1  | ");
   Serial.println(Output);
 
-      A=1; B=0; C=0;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=1; B=0; C=0;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  1  0  0  | ");
   Serial.println(Output);
 
-        A=1; B=0; C=1;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=1; B=0; C=1;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  1  0  1  | ");
   Serial.println(Output);
 
-          A=1; B=1; C=0;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=1; B=1; C=0;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  1  1  0  | ");
   Serial.println(Output);
 
-            A=1; B=1; C=1;
-    Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
+  A=1; B=1; C=1;
+  Output = (~A & B & C) | (A & ~B & C) | (A & B & ~C) | (A & B & C);
   Serial.print("  1  1  1  | ");
   Serial.println(Output);
 } 
