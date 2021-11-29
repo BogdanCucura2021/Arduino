@@ -29,7 +29,7 @@ Serial.println(a);
 Serial.print("b = ");
 Serial.println(b);
 
-d= a / b;
+d = a / b;
 
 Serial.print("a / b = ");
 Serial.println(d);
