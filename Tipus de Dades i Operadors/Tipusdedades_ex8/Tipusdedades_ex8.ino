@@ -25,7 +25,7 @@ Serial.begin(9600);
 
 Serial.print("Your HD is ");
 Serial.print(drive_gb);
-Serial.println("GB Large");
+Serial.println(" GB Large");
 
 drive_mb = 1024 * drive_gb;
 
