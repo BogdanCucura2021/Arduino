@@ -15,7 +15,7 @@
 
 //****************************VARIABLE*************************************
 
-float Carboni = 5;
+float Carboni = 16;
 
 
 //****************************SETUP****************************************
@@ -32,11 +32,22 @@ void loop() {                 //configura el bucle
     Serial.println("A");
     delay(1000); 
   }
-  else if ( Carboni <= 6.5 && Carboni > 3.5)
+ else if ( Carboni <= 6.5 && Carboni > 3.5)
   {
     Serial.println("B");
     delay(1000); 
   }
+    else if ( Carboni <= 11.1 && Carboni > 6.5)
+    {
+    Serial.println("C");
+    delay(1000);
+    }
+      else if ( Carboni <= 17.7 && Carboni > 11.1)
+      {
+      Serial.println("D");
+      delay(1000);
+      }
+       
 }
 
 //****************************FUNCIONS*************************************
