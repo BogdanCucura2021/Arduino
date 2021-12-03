@@ -15,7 +15,7 @@
 
 //****************************VARIABLE*************************************
 
-int sensorReading = 4; 
+int sensorReading =0; 
 
 //****************************SETUP****************************************
 
@@ -41,7 +41,7 @@ void setup() {                 //configura el final de salida
     Serial.println("... I don't know!!!");
   } 
 }
-} 
+}
 
 //****************************LOOP*****************************************
 void loop() {                 //configura el bucle 
