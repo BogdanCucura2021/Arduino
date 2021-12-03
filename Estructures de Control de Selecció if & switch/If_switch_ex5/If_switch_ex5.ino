@@ -47,7 +47,21 @@ void loop() {                 //configura el bucle
       Serial.println("D");
       delay(1000);
       }
-       
+        else if (Carboni <=38.2 && Carboni > 17.7)
+        {
+          Serial.println("E");
+          delay(1000);
+        }
+          else if (Carboni <43.2 && Carboni > 38.2)
+          {
+            Serial.println("F");
+            delay(1000); 
+          }
+          else
+          {
+            Serial.println("G");
+            delay(1000);
+          }
 }
 
 //****************************FUNCIONS*************************************
