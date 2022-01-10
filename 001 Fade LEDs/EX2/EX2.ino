@@ -21,7 +21,7 @@ const byte led2 = 6;
 const byte led3 = 9;          
 const byte led4 = 10;         
 const byte led5 = 11;         
-unsigned long velocitat = 500;
+unsigned long velocitat = 100;
 
 //****************************SETUP****************************************
 
@@ -36,7 +36,7 @@ void setup() {                 //configura el final de salida
 
 //****************************LOOP*****************************************
 void loop() {                 //configura el bucle 
- analogWrite (led0, 0;
+ analogWrite (led0, 0);
  analogWrite (led1, 0);
  analogWrite (led2, 0);
  analogWrite (led3, 0);
@@ -45,7 +45,7 @@ void loop() {                 //configura el bucle
 
  delay(velocitat);
 
- analogWrite (led0, 0;
+ analogWrite (led0, 0);
  analogWrite (led1, 0);
  analogWrite (led2, 0);
  analogWrite (led3, 0);
@@ -54,7 +54,7 @@ void loop() {                 //configura el bucle
 
  delay(velocitat);
 
- analogWrite (led0, 0;
+ analogWrite (led0, 0);
  analogWrite (led1, 0);
  analogWrite (led2, 0);
  analogWrite (led3, 255);
@@ -63,7 +63,7 @@ void loop() {                 //configura el bucle
 
  delay(velocitat);
 
- analogWrite (led0, 0;
+ analogWrite (led0, 0);
  analogWrite (led1, 0);
  analogWrite (led2, 255);
  analogWrite (led3, 125);
@@ -72,7 +72,7 @@ void loop() {                 //configura el bucle
 
  delay(velocitat);
 
- analogWrite (led0, 0;
+ analogWrite (led0, 0);
  analogWrite (led1, 255);
  analogWrite (led2, 125);
  analogWrite (led3, 60);
@@ -97,7 +97,7 @@ void loop() {                 //configura el bucle
  analogWrite (led4, 0);
  analogWrite (led5, 0);
 
- delay(velocitat9;
+ delay(velocitat);
 
  analogWrite (led0, 60);
  analogWrite (led1, 0);
