@@ -15,61 +15,61 @@
 
 //****************************VARIABLE*************************************
 
-const byte led0 = 5;          // donar nom al pin 5 de l’Arduino
-const byte led1 = 6;          // donar nom al pin 6 de l’Arduino
-const byte led2 = 7;          // donar nom al pin 7 de l’Arduino
-const byte led3 = 8;          // donar nom al pin 8 de l’Arduino
-const byte led4 = 9;          // donar nom al pin 9 de l’Arduino
-const byte led5 = 10;         // donar nom al pin 10 de l’Arduino
-const byte led6 = 11;         // donar nom al pin 11 de l’Arduino
-const byte led7 = 12;         // donar nom al pin 12 de l’Arduino
-const byte pot0 = A0;         // donar nom al pin A0 de l’Arduino
+const byte led0 = 5;          
+const byte led1 = 6;          
+const byte led2 = 7;          
+const byte led3 = 8;         
+const byte led4 = 9;          
+const byte led5 = 10;         
+const byte led6 = 11;         
+const byte led7 = 12;         
+const byte pot0 = A0;         
 
-unsigned long velocitat = 20;          // velocitat de l'acció en ms
+unsigned long velocitat = 20;         
 int valPot0; 
 
 //****************************SETUP****************************************
 
-void setup() {                 //configura el final de salida 
-  pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
-  pinMode(led1, OUTPUT);     // definir el pin 6 com una sortida
-  pinMode(led2, OUTPUT);     // definir el pin 7 com una sortida
-  pinMode(led3, OUTPUT);     // definir el pin 8 com una sortida
-  pinMode(led4, OUTPUT);     // definir el pin 9 com una sortida
-  pinMode(led5, OUTPUT);     // definir el pin 10 com una sortida
-  pinMode(led6, OUTPUT);     // definir el pin 11 com una sortida
-  pinMode(led7, OUTPUT);     // definir el pin 12 com una sortida
+void setup() {                 
+  pinMode(led0, OUTPUT);     
+  pinMode(led1, OUTPUT);     
+  pinMode(led2, OUTPUT);     
+  pinMode(led3, OUTPUT);     
+  pinMode(led4, OUTPUT);     
+  pinMode(led5, OUTPUT);     
+  pinMode(led6, OUTPUT);     
+  pinMode(led7, OUTPUT);     
   Serial.begin(9600);
 } 
 
 //****************************LOOP*****************************************
-void loop() {                 //configura el bucle 
-   valPot0 = analogRead(pot0);   // llegir valor del potenciòmetre
+void loop() {                 
+   valPot0 = analogRead(pot0);   
   Serial.println(valPot0);
-  velocitat = 10 + valPot0;  // actualitzar velocitat amb el valor del potenciòmetre
+  velocitat = 10 + valPot0;  
 
-                  // anira de 10 a 1034ms  
-  digitalWrite(led0, HIGH);    // posar a 5V el pin 5
-  digitalWrite(led1, LOW);     // posar a 0V el pin 6
-  digitalWrite(led2, HIGH);    // posar a 5V el pin 7
-  digitalWrite(led3, LOW);     // posar a 0V el pin 8
-  digitalWrite(led4, HIGH);    // posar a 5V el pin 9
-  digitalWrite(led5, LOW);     // posar a 0V el pin 10
-  digitalWrite(led6, HIGH);    // posar a 5V el pin 11
-  digitalWrite(led7, LOW);     // posar a 0V el pin 12
+                    
+  digitalWrite(led0, HIGH);    
+  digitalWrite(led1, LOW);     
+  digitalWrite(led2, HIGH);    
+  digitalWrite(led3, LOW);     
+  digitalWrite(led4, HIGH);    
+  digitalWrite(led5, LOW);     
+  digitalWrite(led6, HIGH);   
+  digitalWrite(led7, LOW);     
   
-  delay(velocitat);            // es queden leds velocitat ms en aquest estat
+  delay(velocitat);            
   
-  digitalWrite(led0, LOW);     // posar a 0V el pin 5
-  digitalWrite(led1, HIGH);    // posar a 5V el pin 6
-  digitalWrite(led2, LOW);     // posar a 0V el pin 7
-  digitalWrite(led3, HIGH);    // posar a 5V el pin 8
-  digitalWrite(led4, LOW);     // posar a 0V el pin 9
-  digitalWrite(led5, HIGH);    // posar a 5V el pin 10
-  digitalWrite(led6, LOW);     // posar a 0V el pin 11
-  digitalWrite(led7, HIGH);    // posar a 5V el pin 12
+  digitalWrite(led0, LOW);     
+  digitalWrite(led1, HIGH);    
+  digitalWrite(led2, LOW);     
+  digitalWrite(led3, HIGH);    
+  digitalWrite(led4, LOW);     
+  digitalWrite(led5, HIGH);    
+  digitalWrite(led6, LOW);     
+  digitalWrite(led7, HIGH);    
   
-  delay(velocitat);            // es queden leds velocitat ms en aquest estat
+  delay(velocitat);           
 }
 
 //****************************FUNCIONS*************************************
