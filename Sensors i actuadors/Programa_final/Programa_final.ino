@@ -18,7 +18,7 @@ int receiver = 11;
 int redPin = 6;
 int greenPin = 5;
 int bluePin = 3;
-int valor;
+int delayTime = 200;
 IRrecv irrecv(receiver);     
 decode_results results;
 
@@ -40,28 +40,37 @@ irrecv.enableIRIn();
 void loop()
 
 {                 //configura el bucle 
-if (irrecv.decode(&results)){ // have we received an IR signal?
  
-Serial.print (results.value, HEX);
-  
- if (results.value == 0xFF30CF) { 
-
+switch(results.value) 
+{
+case 0xFF6897: //0
 analogWrite (redPin, 0);
 analogWrite (greenPin, 255);
 analogWrite (bluePin, 0); 
-}
-if (results.value == 0xFF18E7)
-{
+break;
+
+case 0xFF30CF: //1
+ 
 analogWrite (redPin, 255);
 analogWrite (greenPin, 0);
 analogWrite (bluePin, 0);
-}
-if (results.value == 0xFF7A85)
-{
+break;
+
+case 0xFF18E7: //2
+
 analogWrite (redPin, 0);
 analogWrite (greenPin, 0);
 analogWrite (bluePin, 255);
-}
+break;
+
+case 0xFF7A85: //3
+
+analogWrite (redPin, 255);
+analogWrite (greenPin, 255);
+analogWrite (bluePin, 255);
+break;
+
+case 0xFFE21D: // Func/Stop
 
 
 irrecv.resume();
